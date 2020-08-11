@@ -1,0 +1,5 @@
+intents:
+- greet
+- bye
+- thank
+- faq

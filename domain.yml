@@ -1,13 +1,15 @@
 intents:
-- affirm or thanks
-- goodbye
-- current_matches
+- greet
+- bye
+- thank
 templates:
-  utter_stopworldremoval:
-  - text: Here is the code to add and remove stopwords in Spacy package
+  utter_noworries:
+  - text: No worries!
+  utter_greet:
+  - text: Hi
+  utter_bye:
+  - text: Bye!
 actions:
-- utter_goodbye
+- utter_noworries
 - utter_greet
-- action_match_news
-- utter_gratitude
-- utter_did_that_help
+- utter_bye

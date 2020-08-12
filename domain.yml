@@ -2,6 +2,7 @@ intents:
 - greet
 - bye
 - thank
+- automateEDA_reco
 templates:
   utter_noworries:
   - text: No worries!

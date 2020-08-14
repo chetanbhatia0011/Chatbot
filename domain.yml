@@ -2,6 +2,7 @@ intents:
 - greet
 - bye
 - thank
+- automateEDA_reco
 templates:
   utter_noworries:
   - text: No worries!
@@ -9,7 +10,11 @@ templates:
   - text: Hi
   utter_bye:
   - text: Bye!
+  utter_automateEDA:
+  - text: "Below is the code to Automate the EDA\n pip install sweetviz\n import sweetviz\
+      \ as sv"
 actions:
 - utter_noworries
 - utter_greet
 - utter_bye
+- utter_automateEDA

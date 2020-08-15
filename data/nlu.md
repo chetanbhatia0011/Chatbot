@@ -7,6 +7,8 @@
 - Good morning
 - hi again
 - hi folks
+- HI Bot
+- HI again
 
 ## intent:bye
 - goodbye
@@ -18,6 +20,9 @@
 - bye bye
 - gotta go
 - farewell
+- Good Bye
+- Bye
+- welcome
 
 ## intent:thank
 - Thanks
@@ -26,3 +31,6 @@
 - Thanks bot
 - Thanks for that
 - cheers
+
+## intent:automateEDA_reco
+- I want to Automate EDA

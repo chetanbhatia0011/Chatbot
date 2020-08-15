@@ -1,15 +1,35 @@
 intents:
+- code_reco:
+    use_entities: []
 - greet
 - bye
 - thank
+- automateEDA_reco
+- analyseonecolumn_reco
 templates:
   utter_noworries:
   - text: No worries!
   utter_greet:
-  - text: Hi
+  - text: 'Hello! I am Gideon. I can help you master the world of Data Science. '
+    buttons:
+    - title: Code Recommendations
+      payload: /code_reco
   utter_bye:
   - text: Bye!
+  utter_automateEDA:
+  - text: "Below is the code to Automate the EDA\n\n # importing sweetviz\n import\
+      \ sweetviz as sv\n #analyzing the dataset\n advert_report = sv.analyze(df)\n\
+      \ #display the report\n advert_report.show_html('Advertising.html')"
+  utter_ask_code:
+  - text: Which of the below problems suit your requirement?
+    buttons:
+    - title: Automate EDA
+      payload: /automateEDA_reco
 actions:
 - utter_noworries
 - utter_greet
 - utter_bye
+- utter_automateEDA
+- utter_ask_code
+- utter_histogram_code
+- utter_boxplot_code

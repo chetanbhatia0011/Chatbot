@@ -15,11 +15,7 @@ intents:
 - automateEDA_reco
 - boxplot_reco
 - thankyou
-- barplot1_reco
-- barplot_matplotlib_reco
-- barplot_seaborn_reco
-- barplot_bokeh_reco
-- barplot_ggplot_reco
+
 templates:
   utter_noworries:
   - text: No worries!
@@ -40,22 +36,23 @@ templates:
   - text: A Bar chart or graph is a data visualization technique where each category
       is represented by a rectangle. The height of the rectangle is in the propotion
       to the values being plotted. It is also called column chart.
-  utter_barchart:
+  utter_boxplot1:
   - text: 'So you need more details! Fundamentaly, Bar charts is the simplest visualisation
       method to show comparison between the categories. It may be vertical or horizontal. '
-  utter_ask_barchart:
+  utter_ask_boxplot:
   - text: Which python library you want to use?
     buttons:
     - title: Matplotlib
-      payload: /utter_barchart_matplotlib
+      payload: /utter_boxplot_matplotlib
     - title: Seaborn
-      payload: /utter_barchart_seaborn
+      payload: /utter_boxplot_seaborn
     - title: Plotly
-      payload: /utter_barchart_plotly
+      payload: /utter_boxplot_plotly
     - title: Bokeh
-      payload: /utter_barchart_bokeh
+      payload: /utter_boxplot_bokeh
     - title: Ggplot
-      payload: /utter_barchart_ggplot
+      payload: /utter_boxplot_ggplot
+
   utter_boxplot_matplotlib:
   - text: "It is quite easy. Here is the sample code.        \nimport matplotlib.pyplot\
       \ as\nplt fig = plt.figure() \nax = fig.add_axes([0,0,1,1]) \nlangs= ('C','C++','Java','Python','PHP')\
@@ -74,10 +71,6 @@ actions:
 - utter_meanencoder
 - utter_ask_code1
 - utter_ask_barplot
-- utter_barplot_matplotlib
-- utter_barplot_plotly
-- utter_barplot_bokeh
-- utter_barplot_ggplot
 - utter_barchart
 - utter_ask_barchart
 - utter_barchart1
@@ -85,3 +78,4 @@ actions:
 - utter_barchart_bokeh
 - utter_barchart_matplotlib
 - utter_barchart_ggplot
+

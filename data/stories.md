@@ -1,3 +1,4 @@
+
 ## Bar chart 
 * greet
     - utter_greet
@@ -17,6 +18,14 @@
     - utter_barchart_ggplot
 * thankyou
     - utter_noworries
+
+## greet
+* greet
+  - utter_greet
+
+## thank
+* thank
+  - utter_noworries
 
 ## Automate EDA
 * greet

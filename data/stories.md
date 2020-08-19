@@ -1,3 +1,4 @@
+
 ## Box plot
 * greet
     - utter_greet
@@ -17,6 +18,17 @@
     - utter_boxplot_ggplot
 * thankyou
     - utter_noworries
+## greet
+* greet
+  - utter_greet
+
+## thank
+* thank
+  - utter_noworries
+
+## goodbye
+* bye
+  - utter_bye
 
 ## Automate EDA
 * greet
@@ -27,3 +39,8 @@
   - utter_automateEDA
 * thankyou
   - utter_noworries
+* automateEDA_reco
+  - utter_automateEDA
+* bye
+  - utter_bye
+

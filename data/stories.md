@@ -1,23 +1,24 @@
 
-## Box plot
+## Bar chart 
 * greet
     - utter_greet
-* boxplot_reco
-    - utter_boxplot
-* boxplot1_reco
-    - utter_boxplot1
-* boxplot_code_reco
-    - utter_ask_boxplot
-* boxplot_matplotlib_reco
-    - utter_boxplot_matplotlib
-* boxplot_seaborn_reco
-    - utter_boxplot_plotly
-* boxplot_bokeh_reco
-    - utter_boxplot_bokeh
-* boxplot_ggplot_reco
-    - utter_boxplot_ggplot
+* barchart_reco
+    - utter_barchart
+* barchart_reco
+    - utter_barchart1
+* barchart_code_reco
+    - utter_ask_barchart
+* barchart_matplotlib_reco
+    - utter_barchart_matplotlib
+* barchart_seaborn_reco
+    - utter_barchart_plotly
+* barchart_bokeh_reco
+    - utter_barchart_bokeh
+* barchart_ggplot_reco
+    - utter_barchart_ggplot
 * thankyou
     - utter_noworries
+
 ## greet
 * greet
   - utter_greet
@@ -25,10 +26,6 @@
 ## thank
 * thank
   - utter_noworries
-
-## goodbye
-* bye
-  - utter_bye
 
 ## Automate EDA
 * greet
@@ -39,8 +36,3 @@
   - utter_automateEDA
 * thankyou
   - utter_noworries
-* automateEDA_reco
-  - utter_automateEDA
-* bye
-  - utter_bye
-

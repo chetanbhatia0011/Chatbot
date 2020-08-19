@@ -1,5 +1,4 @@
 ## intent:greet
-- Hi
 - Hey
 - Hi bot
 - Hey bot
@@ -34,3 +33,16 @@
 
 ## intent:automateEDA_reco
 - I want to Automate EDA
+- I want to automate EDA
+
+## intent:boxplot_code_reco
+- How to create Bar chart?
+
+## intent:boxplot1_reco
+- What is Bar chart used for?
+
+## intent:boxplot_reco
+- What is Bar chart?
+- What is Bar chart
+
+

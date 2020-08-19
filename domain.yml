@@ -1,7 +1,13 @@
 intents:
+- barchart_reco
+- barchart_ggplot_reco
+- barchart_seaborn_reco
+- barchart_bokeh_reco
+- barchart_code_reco
+- barchart_matplotlib_reco
 - code_reco:
     use_entities: []
-- boxplot_code_reco:
+- barplot_code_reco:
     use_entities: []
 - greet
 - bye
@@ -9,11 +15,6 @@ intents:
 - automateEDA_reco
 - boxplot_reco
 - thankyou
-- boxplot1_reco
-- boxplot_matplotlib_reco
-- boxplot_seaborn_reco
-- boxplot_bokeh_reco
-- boxplot_ggplot_reco
 
 templates:
   utter_noworries:
@@ -24,13 +25,6 @@ templates:
   - text: Bye!
   utter_automateEDA:
   - text: "Below is the code to Automate the EDA\n\n #importing sweetviz\n import\
-    buttons:
-    - title: Code Recommendations
-      payload: /code_reco
-  utter_bye:
-  - text: Bye!
-  utter_automateEDA:
-  - text: "Below is the code to Automate the EDA\n\n # importing sweetviz\n import\
       \ sweetviz as sv\n #analyzing the dataset\n advert_report = sv.analyze(df)\n\
       \ #display the report\n advert_report.show_html('Advertising.html')"
   utter_ask_code:
@@ -58,11 +52,11 @@ templates:
       payload: /utter_boxplot_bokeh
     - title: Ggplot
       payload: /utter_boxplot_ggplot
+
   utter_boxplot_matplotlib:
   - text: "It is quite easy. Here is the sample code.        \nimport matplotlib.pyplot\
       \ as\nplt fig = plt.figure() \nax = fig.add_axes([0,0,1,1]) \nlangs= ('C','C++','Java','Python','PHP')\
       \ \nstudents = (23,17,35,29,12) \nax.bar(langs,students)\nplt.show()"
-  - text: Below is the code  to Automate the EDA
 actions:
 - utter_noworries
 - utter_greet
@@ -76,8 +70,12 @@ actions:
 - utter_frequency
 - utter_meanencoder
 - utter_ask_code1
-- utter_ask_boxplot
-- utter_boxplot_matplotlib
-- utter_boxplot_plotly
-- utter_boxplot_bokeh
-- utter_boxplot_ggplot
+- utter_ask_barplot
+- utter_barchart
+- utter_ask_barchart
+- utter_barchart1
+- utter_barchart_plotly
+- utter_barchart_bokeh
+- utter_barchart_matplotlib
+- utter_barchart_ggplot
+

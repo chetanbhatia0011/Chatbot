@@ -25,6 +25,7 @@ templates:
     buttons:
     - title: Automate EDA
       payload: /automateEDA_reco
+  - text: Below is the code  to Automate the EDA
 actions:
 - utter_noworries
 - utter_greet

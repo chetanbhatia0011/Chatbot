@@ -31,9 +31,3 @@
   - utter_automateEDA
 * thankyou
   - utter_noworries
-
-## New Story
-
-* greet
-    - utter_greet
-* barchart_reco

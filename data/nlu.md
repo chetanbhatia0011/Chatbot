@@ -38,12 +38,4 @@
 - I want to Automate EDA
 - I want to automate EDA
 
-## intent:barchart_code_reco
-- How to create Bar chart?
 
-## intent:barchart1_reco
-- What is Bar chart used for?
-
-## intent:barchart_reco
-- What is Bar chart?
-- What is Bar chart

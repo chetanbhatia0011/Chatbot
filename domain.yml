@@ -1,15 +1,74 @@
 intents:
+- code_reco:
+    use_entities: []
+- boxplot_code_reco:
+    use_entities: []
 - greet
 - bye
 - thank
+- automateEDA_reco
+- boxplot_reco
+- thankyou
+- boxplot1_reco
+- boxplot_matplotlib_reco
+- boxplot_seaborn_reco
+- boxplot_bokeh_reco
+- boxplot_ggplot_reco
 templates:
   utter_noworries:
   - text: No worries!
   utter_greet:
-  - text: Hi
+  - text: 'Hello! I am Gideon. I can help you master the world of Data Science. '
   utter_bye:
   - text: Bye!
+  utter_automateEDA:
+  - text: "Below is the code to Automate the EDA\n\n #importing sweetviz\n import\
+      \ sweetviz as sv\n #analyzing the dataset\n advert_report = sv.analyze(df)\n\
+      \ #display the report\n advert_report.show_html('Advertising.html')"
+  utter_ask_code:
+  - text: Which of the below problems suit your requirement?
+    buttons:
+    - title: Automate EDA
+      payload: /automateEDA_reco
+  utter_boxplot:
+  - text: A Bar chart or graph is a data visualization technique where each category
+      is represented by a rectangle. The height of the rectangle is in the propotion
+      to the values being plotted. It is also called column chart.
+  utter_boxplot1:
+  - text: 'So you need more details! Fundamentaly, Bar charts is the simplest visualisation
+      method to show comparison between the categories. It may be vertical or horizontal. '
+  utter_ask_boxplot:
+  - text: Which python library you want to use?
+    buttons:
+    - title: Matplotlib
+      payload: /utter_boxplot_matplotlib
+    - title: Seaborn
+      payload: /utter_boxplot_seaborn
+    - title: Plotly
+      payload: /utter_boxplot_plotly
+    - title: Bokeh
+      payload: /utter_boxplot_bokeh
+    - title: Ggplot
+      payload: /utter_boxplot_ggplot
+  utter_boxplot_matplotlib:
+  - text: "It is quite easy. Here is the sample code.        \nimport matplotlib.pyplot\
+      \ as\nplt fig = plt.figure() \nax = fig.add_axes([0,0,1,1]) \nlangs= ('C','C++','Java','Python','PHP')\
+      \ \nstudents = (23,17,35,29,12) \nax.bar(langs,students)\nplt.show()"
 actions:
 - utter_noworries
 - utter_greet
 - utter_bye
+- utter_automateEDA
+- utter_ask_code
+- utter_histogram_code
+- utter_boxplot_code
+- utter_boxplot
+- utter_boxplot1
+- utter_frequency
+- utter_meanencoder
+- utter_ask_code1
+- utter_ask_boxplot
+- utter_boxplot_matplotlib
+- utter_boxplot_plotly
+- utter_boxplot_bokeh
+- utter_boxplot_ggplot

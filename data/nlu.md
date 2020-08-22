@@ -8,6 +8,7 @@
 - hi folks
 - HI Bot
 - HI again
+- Hi
 
 ## intent:bye
 - goodbye
@@ -22,6 +23,7 @@
 - Good Bye
 - Bye
 - welcome
+- bye
 
 ## intent:thank
 - Thanks
@@ -30,19 +32,10 @@
 - Thanks bot
 - Thanks for that
 - cheers
+- thanks
 
 ## intent:automateEDA_reco
 - I want to Automate EDA
 - I want to automate EDA
-
-## intent:boxplot_code_reco
-- How to create Bar chart?
-
-## intent:boxplot1_reco
-- What is Bar chart used for?
-
-## intent:boxplot_reco
-- What is Bar chart?
-- What is Bar chart
 
 

@@ -1,4 +1,6 @@
 intents:
+- barchart_plotly_reco
+- barchart1_reco
 - barchart_reco
 - barchart_ggplot_reco
 - barchart_seaborn_reco
@@ -13,14 +15,31 @@ intents:
 - bye
 - thank
 - automateEDA_reco
-- boxplot_reco
 - thankyou
-
+- linechart_reco
+- linechart_plotly_reco
+- linechart_code_reco
+- linechart_bokeh_reco
+- linechart_seaborn_reco
+- linechart1_reco
+- linechart_matplotlib_reco
+- linechart_ggplot_reco
+- histogram_bokeh_reco
+- histogram1_reco
+- histogram_seaborn_reco
+- histogram_ggplot_reco
+- histogram_plotly_reco
+- histogram_matplotlib_reco
+- histogram_reco
+- histogram_code_reco
 templates:
   utter_noworries:
   - text: No worries!
   utter_greet:
   - text: 'Hello! I am Gideon. I can help you master the world of Data Science. '
+    buttons:
+    - title: Code recommendation
+      payload: /code_reco
   utter_bye:
   - text: Bye!
   utter_automateEDA:
@@ -32,45 +51,70 @@ templates:
     buttons:
     - title: Automate EDA
       payload: /automateEDA_reco
-  utter_boxplot:
+  utter_barchart:
   - text: A Bar chart or graph is a data visualization technique where each category
       is represented by a rectangle. The height of the rectangle is in the propotion
       to the values being plotted. It is also called column chart.
-  utter_boxplot1:
+  utter_barchart1:
   - text: 'So you need more details! Fundamentaly, Bar charts is the simplest visualisation
       method to show comparison between the categories. It may be vertical or horizontal. '
-  utter_ask_boxplot:
+  utter_ask_code1:
   - text: Which python library you want to use?
     buttons:
     - title: Matplotlib
-      payload: /utter_boxplot_matplotlib
+      payload: /barchart_matplotlib_reco
     - title: Seaborn
-      payload: /utter_boxplot_seaborn
+      payload: /barchart_seaborn_reco
     - title: Plotly
-      payload: /utter_boxplot_plotly
+      payload: /barchart_plotly_reco
     - title: Bokeh
-      payload: /utter_boxplot_bokeh
+      payload: /barchart_bokeh_reco
     - title: Ggplot
-      payload: /utter_boxplot_ggplot
-
-  utter_boxplot_matplotlib:
-  - text: "It is quite easy. Here is the sample code.        \nimport matplotlib.pyplot\
-      \ as\nplt fig = plt.figure() \nax = fig.add_axes([0,0,1,1]) \nlangs= ('C','C++','Java','Python','PHP')\
-      \ \nstudents = (23,17,35,29,12) \nax.bar(langs,students)\nplt.show()"
+      payload: /barchart_ggplot_reco
+  utter_barchart_matplotlib:
+  - text: "Here is the sample code.        \nimport matplotlib.pyplot as\nplt fig\
+      \ = plt.figure() \nax = fig.add_axes([0,0,1,1]) \nlangs= \\['C','C++','Java','Python','PHP']\n\
+      students = \\[23,17,35,29,12] \nax.bar(langs,students)\nplt.show()"
+  utter_barchart_seaborn:
+  - text: "Here is the sample code.   \nimport seaborn as sns  \nsns.set(style=\"\
+      whitegrid\")\ntips = sns.load_dataset(\"tips\")  \nax = sns.barplot(x=\"day\"\
+      ,y=\"total_bill\",data=tips)"
+  utter_barchart_plotly:
+  - text: "Here is the sample code.      \nimport plotly.graph_objs as go    \nlangs\
+      \ =  ('C','C++',  'Java', 'Python', 'PHP')\nstudents = (23,17,35,29,12) \ndata\
+      \ =  (go.Bar(x = langs,y = students ))    \nfig = go.Figure(data=data)    \n\
+      iplot(fig)"
+  utter_linechart:
+  - text: Line chart.. it is one of the easiest ways to visualize data. It is used
+      to show change of data over a continuous time interval. It is also known as
+      Line  graph or Line plot.
+  utter_linechart1:
+  - text: Line charts are used to track changes over short or long time interval.
+      When changes are smaller, Line charts are better than Line charts.
+  utter_linechart_matplotlib:
+  - text: "Here is the sample code.\nfrom matplotlib import pyplot as plt \nimport\
+      \ numpy as np \nimport math #needed for definition of pi \nx = np.arange(0,\
+      \ math.pi*2, 0.05)\ny = np.sin(x) plt.plot(x,y) \nplt.xlabel(\"angle\") \nplt.ylabel(\"\
+      sine\")\nplt.title('sine wave') \nplt.show()"
+  utter_histogram:
+  - text: Histogram is a type of visualization chart. It is an approximate representation
+      of the distribution of numerical data. It is similar to vertical bar chart.
+      It was first introduced by Karl Pearson.
+  utter_histogram1:
+  - text: A histogram is used to summarize discrete or continuous data. In other words,
+      it provides a visual interpretation.
+  utter_histogram_matplotlib:
+  - text: "Here is the sample code.\nfrom matplotlib \nimport pyplot as plt \nimport\
+      \ numpy as np \nfig,ax = plt.subplots(1,1)\na = np.array(\\[22,87,5,43,56,73,55,54,11,20,51,5,79,31,27])\
+      \ \nax.hist(a, bins = \\[0,25,50,75,100])\nax.set_title(\"histogram of result\"\
+      )\nax.set_xticks(\\[0,25,50,75,100]) \nax.set_xlabel('marks') \nax.set_ylabel('no.\
+      \ of students') \nplt.show()"
 actions:
 - utter_noworries
 - utter_greet
 - utter_bye
 - utter_automateEDA
 - utter_ask_code
-- utter_histogram_code
-- utter_boxplot_code
-- utter_boxplot
-- utter_boxplot1
-- utter_frequency
-- utter_meanencoder
-- utter_ask_code1
-- utter_ask_barplot
 - utter_barchart
 - utter_ask_barchart
 - utter_barchart1
@@ -78,4 +122,22 @@ actions:
 - utter_barchart_bokeh
 - utter_barchart_matplotlib
 - utter_barchart_ggplot
+- utter_barchart_seaborn
+- utter_histogram_bokeh
+- utter_histogram
+- utter_histogram_plotly
+- utter_histogram_matplotlib
+- utter_histogram_seaborn
+- utter_histogram_ggplot
+- utter_ask_histogram
+- utter_linechart_seaborn
+- utter_linechart_plotly
+- utter_linechart
+- utter_linechart_ggplot
+- utter_ask_linechart
+- utter_linechart_bokeh
+- utter_linechart_matplotlib
+- utter_linechart1
+- utter_ask_code1
+- utter_histogram1
 

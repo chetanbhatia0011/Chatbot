@@ -10,7 +10,6 @@
 - HI again
 - Hi
 - hi
-
 ## intent:bye
 - goodbye
 - goodnight

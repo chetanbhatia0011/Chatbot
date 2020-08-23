@@ -9,7 +9,7 @@
 - HI Bot
 - HI again
 - Hi
-
+- hi
 ## intent:bye
 - goodbye
 - goodnight
@@ -38,4 +38,47 @@
 - I want to Automate EDA
 - I want to automate EDA
 
+## intent:barchart_code_reco
+- How to create Bar chart?
+- create barchart
+- how to use bart chart
+- create a barchart
 
+## intent:barchart1_reco
+- What is Bar chart used for?
+- how to use bar chart
+- what is the use of bar chart
+- use of bar chart
+
+## intent:barchart_reco
+- What is Bar chart?
+- What is Bar chart
+- bar chart
+- what is bar chart
+- What is bar chart
+- what is a barchart
+- What is a bar chart
+- Bar chart
+- barchart
+
+## intent:linechart1_reco
+- what is use of line chart
+
+## intent:histogram_reco
+- what is histogram
+- histogram
+
+## intent:histogram1_reco
+- What is use of histogram
+
+## intent:linechart_reco
+- what is line chart
+
+## intent:histogram_code_reco
+- how to create histogram
+
+## intent:linechart_code_reco
+- how to create line chart
+
+## intent:thankyou
+- thank
